@@ -1,0 +1,5 @@
+# Workspace-level Cargo configuration.
+
+[target.x86_64-unknown-linux-gnu]
+# hamlib is a C library; link against libm and libusb when targeting Linux.
+rustflags = ["-C", "link-arg=-lm", "-C", "link-arg=-lusb-1.0"]

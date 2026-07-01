@@ -1,0 +1,14 @@
+[package]
+name = "quirq-ffi"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# cdylib → shared library for Android/Linux
+# staticlib → static library for iOS
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+quirq-core = { path = "../quirq-core" }
+flutter_rust_bridge = "=2.12.0"
+anyhow = "1"

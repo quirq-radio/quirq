@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Hot-reload, full Dart debugger, slower startup.
+      "name": "Debug",
+      "type": "dart",
+      "request": "launch",
+      "program": "${workspaceFolder}/app/lib/main.dart",
+      "cwd": "${workspaceFolder}/app",
+      "flutterMode": "debug",
+      "deviceId": "linux"
+    },
+    {
+      // Optimised build, no debugger, no hot reload.
+      // Use this for realistic performance testing.
+      "name": "Run",
+      "type": "dart",
+      "request": "launch",
+      "noDebug": true,
+      "program": "${workspaceFolder}/app/lib/main.dart",
+      "cwd": "${workspaceFolder}/app",
+      "flutterMode": "profile",
+      "deviceId": "linux"
+    }
+  ]
+}

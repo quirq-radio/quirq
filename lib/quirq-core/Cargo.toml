@@ -1,0 +1,9 @@
+[package]
+name = "quirq-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hamlib-sys = { path = "../hamlib-sys" }
+thiserror = { workspace = true }
+fastrand = "2"

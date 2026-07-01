@@ -1,0 +1,9 @@
+[package]
+name = "hamlib-sys"
+version = "0.1.0"
+edition = "2021"
+links = "hamlib"
+
+[build-dependencies]
+bindgen = "0.72"
+pkg-config = "0.3"
